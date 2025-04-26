@@ -1,0 +1,287 @@
+[1.696s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.696s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], bazel_args=None, bazel_task=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, meson_args=[], ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_alias.argument_parser.alias.AliasArgumentDecorator object at 0x74de42ff0160>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x74de42fab3d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x74de42fab3d0>>, mixin_verb=('build',))
+[3.519s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.520s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.520s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.520s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.520s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.520s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.520s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/luiz/ros2_fbot'
+[3.520s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.520s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.520s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.520s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.520s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.521s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.521s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.521s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.521s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['bazel', 'cmake', 'meson', 'python']
+[3.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'bazel'
+[3.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'meson'
+[3.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.533s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.533s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.533s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.560s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.561s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.561s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.561s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.561s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.561s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.561s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.561s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[3.561s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[3.561s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[3.562s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[3.562s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[3.562s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[3.562s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[3.562s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[3.562s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['bazel', 'cmake', 'meson', 'python']
+[3.562s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'bazel'
+[3.562s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[3.562s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'meson'
+[3.562s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[3.562s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[3.562s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[3.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extensions ['ignore', 'ignore_ament_install']
+[3.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'ignore'
+[3.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'ignore_ament_install'
+[3.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extensions ['colcon_pkg']
+[3.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'colcon_pkg'
+[3.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extensions ['colcon_meta']
+[3.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'colcon_meta'
+[3.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extensions ['ros']
+[3.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'ros'
+[3.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extensions ['bazel', 'cmake', 'meson', 'python']
+[3.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'bazel'
+[3.564s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'cmake'
+[3.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'meson'
+[3.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'python'
+[3.614s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Stage' with type 'cmake' and name 'Stage'
+[3.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['ignore', 'ignore_ament_install']
+[3.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ignore'
+[3.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ignore_ament_install'
+[3.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['colcon_pkg']
+[3.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'colcon_pkg'
+[3.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['colcon_meta']
+[3.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'colcon_meta'
+[3.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['ros']
+[3.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ros'
+[3.621s] DEBUG:colcon.colcon_core.package_identification:Package 'src/navigation' with type 'ros.ament_python' and name 'navigation'
+[3.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extensions ['ignore', 'ignore_ament_install']
+[3.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extension 'ignore'
+[3.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extension 'ignore_ament_install'
+[3.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extensions ['colcon_pkg']
+[3.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extension 'colcon_pkg'
+[3.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extensions ['colcon_meta']
+[3.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extension 'colcon_meta'
+[3.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extensions ['ros']
+[3.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extension 'ros'
+[3.624s] DEBUG:colcon.colcon_core.package_identification:Package 'src/stage_ros2' with type 'ros.ament_cmake' and name 'stage_ros2'
+[3.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.818s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.818s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[3.849s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/luiz/ros2_fbot/install
+[3.849s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/luiz/ros2_ws/install
+[3.851s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 271 installed packages in /opt/ros/humble
+[3.854s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.170s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'bazel_args' from command line to 'None'
+[4.170s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'bazel_task' from command line to 'None'
+[4.170s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'cmake_args' from command line to 'None'
+[4.170s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'cmake_target' from command line to 'None'
+[4.171s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.171s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'cmake_clean_cache' from command line to 'False'
+[4.171s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'cmake_clean_first' from command line to 'False'
+[4.171s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'cmake_force_configure' from command line to 'False'
+[4.171s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'meson_args' from command line to '[]'
+[4.171s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'ament_cmake_args' from command line to 'None'
+[4.171s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'catkin_cmake_args' from command line to 'None'
+[4.171s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.171s] DEBUG:colcon.colcon_core.verb:Building package 'Stage' with the following arguments: {'ament_cmake_args': None, 'bazel_args': None, 'bazel_task': None, 'build_base': '/home/luiz/ros2_fbot/build/Stage', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luiz/ros2_fbot/install/Stage', 'merge_install': False, 'meson_args': [], 'path': '/home/luiz/ros2_fbot/src/Stage', 'symlink_install': False, 'test_result_base': None}
+[4.193s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'bazel_args' from command line to 'None'
+[4.193s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'bazel_task' from command line to 'None'
+[4.193s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_args' from command line to 'None'
+[4.193s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_target' from command line to 'None'
+[4.193s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.193s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[4.193s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_clean_first' from command line to 'False'
+[4.193s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_force_configure' from command line to 'False'
+[4.193s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'meson_args' from command line to '[]'
+[4.193s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'ament_cmake_args' from command line to 'None'
+[4.193s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[4.194s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.194s] DEBUG:colcon.colcon_core.verb:Building package 'navigation' with the following arguments: {'ament_cmake_args': None, 'bazel_args': None, 'bazel_task': None, 'build_base': '/home/luiz/ros2_fbot/build/navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luiz/ros2_fbot/install/navigation', 'merge_install': False, 'meson_args': [], 'path': '/home/luiz/ros2_fbot/src/navigation', 'symlink_install': False, 'test_result_base': None}
+[4.217s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'bazel_args' from command line to 'None'
+[4.217s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'bazel_task' from command line to 'None'
+[4.217s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'cmake_args' from command line to 'None'
+[4.217s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'cmake_target' from command line to 'None'
+[4.217s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.217s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[4.217s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[4.217s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[4.217s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'meson_args' from command line to '[]'
+[4.217s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[4.217s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[4.217s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.217s] DEBUG:colcon.colcon_core.verb:Building package 'stage_ros2' with the following arguments: {'ament_cmake_args': None, 'bazel_args': None, 'bazel_task': None, 'build_base': '/home/luiz/ros2_fbot/build/stage_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luiz/ros2_fbot/install/stage_ros2', 'merge_install': False, 'meson_args': [], 'path': '/home/luiz/ros2_fbot/src/stage_ros2', 'symlink_install': False, 'test_result_base': None}
+[4.218s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.219s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.219s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/luiz/ros2_fbot/src/Stage'
+[4.225s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[4.226s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=220 for '/home/luiz/ros2_fbot/build/Stage'
+[4.226s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[4.226s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.226s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.233s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/luiz/ros2_fbot/src/navigation' with build type 'ament_python'
+[4.234s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation', 'ament_prefix_path')
+[4.235s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/navigation/share/navigation/hook/ament_prefix_path.ps1'
+[4.237s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luiz/ros2_fbot/install/navigation/share/navigation/hook/ament_prefix_path.dsv'
+[4.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/navigation/share/navigation/hook/ament_prefix_path.sh'
+[4.240s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=31 for '/home/luiz/ros2_fbot/build/navigation'
+[4.240s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[4.241s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.241s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.330s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luiz/ros2_fbot/build/Stage': /usr/bin/cmake --build /home/luiz/ros2_fbot/build/Stage -- -j4 -l4
+[4.934s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/luiz/ros2_fbot/src/navigation'
+[4.935s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=31 for '/home/luiz/ros2_fbot/build/navigation'
+[4.935s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[4.935s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.936s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.203s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luiz/ros2_fbot/build/Stage' returned '0': /usr/bin/cmake --build /home/luiz/ros2_fbot/build/Stage -- -j4 -l4
+[6.262s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luiz/ros2_fbot/build/Stage': /usr/bin/cmake --install /home/luiz/ros2_fbot/build/Stage
+[6.314s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(Stage)
+[6.316s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luiz/ros2_fbot/build/Stage' returned '0': /usr/bin/cmake --install /home/luiz/ros2_fbot/build/Stage
+[6.382s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/Stage' for CMake module files
+[6.383s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/Stage' for CMake config files
+[6.384s] Level 1:colcon.colcon_core.shell:create_environment_hook('Stage', 'cmake_prefix_path')
+[6.384s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/Stage/share/Stage/hook/cmake_prefix_path.ps1'
+[6.385s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luiz/ros2_fbot/install/Stage/share/Stage/hook/cmake_prefix_path.dsv'
+[6.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/Stage/share/Stage/hook/cmake_prefix_path.sh'
+[6.386s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/Stage/lib'
+[6.387s] Level 1:colcon.colcon_core.shell:create_environment_hook('Stage', 'ld_library_path_lib')
+[6.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/Stage/share/Stage/hook/ld_library_path_lib.ps1'
+[6.388s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luiz/ros2_fbot/install/Stage/share/Stage/hook/ld_library_path_lib.dsv'
+[6.388s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/Stage/share/Stage/hook/ld_library_path_lib.sh'
+[6.389s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/Stage/bin'
+[6.389s] Level 1:colcon.colcon_core.shell:create_environment_hook('Stage', 'path')
+[6.389s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/Stage/share/Stage/hook/path.ps1'
+[6.390s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luiz/ros2_fbot/install/Stage/share/Stage/hook/path.dsv'
+[6.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/Stage/share/Stage/hook/path.sh'
+[6.391s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/Stage/lib/pkgconfig/Stage.pc'
+[6.391s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/Stage/lib/python3.10/site-packages'
+[6.392s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/Stage/bin'
+[6.392s] Level 1:colcon.colcon_core.shell:create_environment_hook('Stage', 'pythonscriptspath')
+[6.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/Stage/share/Stage/hook/pythonscriptspath.ps1'
+[6.393s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luiz/ros2_fbot/install/Stage/share/Stage/hook/pythonscriptspath.dsv'
+[6.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/Stage/share/Stage/hook/pythonscriptspath.sh'
+[6.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/luiz/ros2_fbot/install/Stage/share/Stage/package.ps1'
+[6.396s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luiz/ros2_fbot/install/Stage/share/Stage/package.dsv'
+[6.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/luiz/ros2_fbot/install/Stage/share/Stage/package.sh'
+[6.399s] INFO:colcon.colcon_core.shell:Creating package script '/home/luiz/ros2_fbot/install/Stage/share/Stage/package.bash'
+[6.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/luiz/ros2_fbot/install/Stage/share/Stage/package.zsh'
+[6.401s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luiz/ros2_fbot/install/Stage/share/colcon-core/packages/Stage)
+[6.402s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Released ROS_DOMAIN_ID=220 for '/home/luiz/ros2_fbot/build/Stage'
+[6.403s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/luiz/ros2_fbot/src/stage_ros2' with build type 'ament_cmake'
+[6.403s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/luiz/ros2_fbot/src/stage_ros2'
+[6.404s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=27 for '/home/luiz/ros2_fbot/build/stage_ros2'
+[6.404s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[6.404s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.404s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.418s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luiz/ros2_fbot/src/navigation': PYTHONPATH=/home/luiz/ros2_fbot/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luiz/ros2_fbot/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/luiz/ros2_fbot/build/navigation/build install --record /home/luiz/ros2_fbot/build/navigation/install.log --single-version-externally-managed install_data
+[6.493s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luiz/ros2_fbot/build/stage_ros2': CMAKE_PREFIX_PATH=/home/luiz/ros2_fbot/install/Stage:/home/luiz/ros2_fbot/install/stage_ros2:/home/luiz/ros2_fbot/install/navigation:/home/luiz/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/luiz/ros2_fbot/install/Stage/lib:/home/luiz/ros2_fbot/install/stage_ros2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/luiz/ros2_fbot/build/stage_ros2 -- -j4 -l4
+[7.021s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/navigation' for CMake module files
+[7.022s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luiz/ros2_fbot/src/navigation' returned '0': PYTHONPATH=/home/luiz/ros2_fbot/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luiz/ros2_fbot/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/luiz/ros2_fbot/build/navigation/build install --record /home/luiz/ros2_fbot/build/navigation/install.log --single-version-externally-managed install_data
+[7.022s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/navigation' for CMake config files
+[7.023s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/navigation/lib'
+[7.024s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/navigation/bin'
+[7.024s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/navigation/lib/pkgconfig/navigation.pc'
+[7.024s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/navigation/lib/python3.10/site-packages'
+[7.024s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation', 'pythonpath')
+[7.025s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/navigation/share/navigation/hook/pythonpath.ps1'
+[7.025s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luiz/ros2_fbot/install/navigation/share/navigation/hook/pythonpath.dsv'
+[7.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/navigation/share/navigation/hook/pythonpath.sh'
+[7.027s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/navigation/bin'
+[7.027s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navigation)
+[7.027s] INFO:colcon.colcon_core.shell:Creating package script '/home/luiz/ros2_fbot/install/navigation/share/navigation/package.ps1'
+[7.028s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luiz/ros2_fbot/install/navigation/share/navigation/package.dsv'
+[7.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/luiz/ros2_fbot/install/navigation/share/navigation/package.sh'
+[7.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/luiz/ros2_fbot/install/navigation/share/navigation/package.bash'
+[7.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/luiz/ros2_fbot/install/navigation/share/navigation/package.zsh'
+[7.031s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luiz/ros2_fbot/install/navigation/share/colcon-core/packages/navigation)
+[7.031s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Released ROS_DOMAIN_ID=31 for '/home/luiz/ros2_fbot/build/navigation'
+[7.033s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luiz/ros2_fbot/build/stage_ros2' returned '0': CMAKE_PREFIX_PATH=/home/luiz/ros2_fbot/install/Stage:/home/luiz/ros2_fbot/install/stage_ros2:/home/luiz/ros2_fbot/install/navigation:/home/luiz/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/luiz/ros2_fbot/install/Stage/lib:/home/luiz/ros2_fbot/install/stage_ros2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/luiz/ros2_fbot/build/stage_ros2 -- -j4 -l4
+[7.035s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luiz/ros2_fbot/build/stage_ros2': CMAKE_PREFIX_PATH=/home/luiz/ros2_fbot/install/Stage:/home/luiz/ros2_fbot/install/stage_ros2:/home/luiz/ros2_fbot/install/navigation:/home/luiz/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/luiz/ros2_fbot/install/Stage/lib:/home/luiz/ros2_fbot/install/stage_ros2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/luiz/ros2_fbot/build/stage_ros2
+[7.155s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stage_ros2)
+[7.155s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/stage_ros2' for CMake module files
+[7.156s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luiz/ros2_fbot/build/stage_ros2' returned '0': CMAKE_PREFIX_PATH=/home/luiz/ros2_fbot/install/Stage:/home/luiz/ros2_fbot/install/stage_ros2:/home/luiz/ros2_fbot/install/navigation:/home/luiz/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/luiz/ros2_fbot/install/Stage/lib:/home/luiz/ros2_fbot/install/stage_ros2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/luiz/ros2_fbot/build/stage_ros2
+[7.157s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/stage_ros2' for CMake config files
+[7.158s] Level 1:colcon.colcon_core.shell:create_environment_hook('stage_ros2', 'cmake_prefix_path')
+[7.158s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/hook/cmake_prefix_path.ps1'
+[7.159s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/hook/cmake_prefix_path.dsv'
+[7.160s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/hook/cmake_prefix_path.sh'
+[7.161s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/stage_ros2/lib'
+[7.161s] Level 1:colcon.colcon_core.shell:create_environment_hook('stage_ros2', 'ld_library_path_lib')
+[7.161s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/hook/ld_library_path_lib.ps1'
+[7.162s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/hook/ld_library_path_lib.dsv'
+[7.163s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/hook/ld_library_path_lib.sh'
+[7.164s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/stage_ros2/bin'
+[7.164s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/stage_ros2/lib/pkgconfig/stage_ros2.pc'
+[7.164s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/stage_ros2/lib/python3.10/site-packages'
+[7.165s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/stage_ros2/bin'
+[7.166s] INFO:colcon.colcon_core.shell:Creating package script '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/package.ps1'
+[7.168s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/package.dsv'
+[7.169s] INFO:colcon.colcon_core.shell:Creating package script '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/package.sh'
+[7.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/package.bash'
+[7.171s] INFO:colcon.colcon_core.shell:Creating package script '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/package.zsh'
+[7.171s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luiz/ros2_fbot/install/stage_ros2/share/colcon-core/packages/stage_ros2)
+[7.173s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stage_ros2)
+[7.173s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/stage_ros2' for CMake module files
+[7.174s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/stage_ros2' for CMake config files
+[7.174s] Level 1:colcon.colcon_core.shell:create_environment_hook('stage_ros2', 'cmake_prefix_path')
+[7.175s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/hook/cmake_prefix_path.ps1'
+[7.176s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/hook/cmake_prefix_path.dsv'
+[7.177s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/hook/cmake_prefix_path.sh'
+[7.178s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/stage_ros2/lib'
+[7.178s] Level 1:colcon.colcon_core.shell:create_environment_hook('stage_ros2', 'ld_library_path_lib')
+[7.179s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/hook/ld_library_path_lib.ps1'
+[7.179s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/hook/ld_library_path_lib.dsv'
+[7.180s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/hook/ld_library_path_lib.sh'
+[7.181s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/stage_ros2/bin'
+[7.181s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/stage_ros2/lib/pkgconfig/stage_ros2.pc'
+[7.181s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/stage_ros2/lib/python3.10/site-packages'
+[7.181s] Level 1:colcon.colcon_core.environment:checking '/home/luiz/ros2_fbot/install/stage_ros2/bin'
+[7.182s] INFO:colcon.colcon_core.shell:Creating package script '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/package.ps1'
+[7.183s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/package.dsv'
+[7.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/package.sh'
+[7.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/package.bash'
+[7.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/luiz/ros2_fbot/install/stage_ros2/share/stage_ros2/package.zsh'
+[7.186s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luiz/ros2_fbot/install/stage_ros2/share/colcon-core/packages/stage_ros2)
+[7.186s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.186s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.186s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.186s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.186s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Released ROS_DOMAIN_ID=27 for '/home/luiz/ros2_fbot/build/stage_ros2'
+[7.305s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.306s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.306s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.389s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.390s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/luiz/ros2_fbot/install/local_setup.ps1'
+[7.417s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/luiz/ros2_fbot/install/_local_setup_util_ps1.py'
+[7.436s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/luiz/ros2_fbot/install/setup.ps1'
+[7.439s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/luiz/ros2_fbot/install/local_setup.sh'
+[7.440s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/luiz/ros2_fbot/install/_local_setup_util_sh.py'
+[7.441s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/luiz/ros2_fbot/install/setup.sh'
+[7.445s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/luiz/ros2_fbot/install/local_setup.bash'
+[7.505s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/luiz/ros2_fbot/install/setup.bash'
+[7.507s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/luiz/ros2_fbot/install/local_setup.zsh'
+[7.528s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/luiz/ros2_fbot/install/setup.zsh'
+[7.530s] INFO:colcon.colcon_core.shell:Creating '/home/luiz/ros2_fbot/install/spawn_shell.bash'

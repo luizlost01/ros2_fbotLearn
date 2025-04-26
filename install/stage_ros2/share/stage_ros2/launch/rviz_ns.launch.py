@@ -1,0 +1,1 @@
+/home/luiz/ros2_fbot/src/stage_ros2/launch/rviz_ns.launch.py
