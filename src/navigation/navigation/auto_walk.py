@@ -11,7 +11,8 @@ class Publisher(Node):
     def __init__(self):
         super().__init__("publisher")
 
-        self.subscription = self.create_subscription(LaserScan, "/base_scan", self.scan_callback, 10)        
+        self.subscription = self.create_subscription(LaserScan, "/base_scan", self.scan_callback, 10)
+
         self.publisher = self.create_publisher(Twist, "/cmd_vel", 10)
 
         self.get_logger().info("Published Walk")
@@ -26,11 +27,11 @@ class Publisher(Node):
 
 
         #Verifica se algum valor do array a esquerda é menor ou igual a 1.5
-        right_obstacle = any(dist <= 1 for dist in dist_esquerda)
+        right_obstacle = any(dist <= 0.7 for dist in dist_esquerda)
         #Verifica se algum valor do array a direita é menor ou igual a 1.5
-        left_obstacle = any(dist <= 1 for dist in dist_direita)
+        left_obstacle = any(dist <= 0.7 for dist in dist_direita)
         #Verifica se algum valor do array ao centro é menor ou igual a 1.5
-        center_obstacle = any(dist <= 0.9 for dist in dist_centro)
+        center_obstacle = any(dist <= 0.7 for dist in dist_centro)
 
         #Chama a função Publish_walk
         self.publish_walk(right_obstacle, left_obstacle, center_obstacle)
@@ -39,29 +40,33 @@ class Publisher(Node):
     def publish_walk(self, right_obstacle, left_obstacle, center_obstacle):
         msg = Twist()
         vel_x = 0.5
-        if left_obstacle and not right_obstacle:
-            msg.linear.x = vel_x
-            msg.angular.z = 0.30
+        ang_z = 0.25
+        
+        if center_obstacle:
+            msg.angular.z = 0.45
+            msg.linear.x = -1.0
             self.publisher.publish(msg)
-        elif center_obstacle:
-            msg.linear.x = -2.0
-            msg.angular.z = -1.0
+        
+        elif left_obstacle and not right_obstacle:
+            msg.angular.z = ang_z
+            msg.linear.x = vel_x
             self.publisher.publish(msg)
 
-        elif left_obstacle:
-            msg.linear.x = vel_x
-            msg.angular.z = 0.30
-            self.publisher.publish(msg)
         elif right_obstacle and not left_obstacle:
+            msg.angular.z = ang_z
             msg.linear.x = vel_x
-            msg.angular.z = -0.30
+            self.publisher.publish(msg)
+        
+        elif right_obstacle and left_obstacle:
+            msg.angular.z = 0.90
+            msg.linear.x = 0.0
             self.publisher.publish(msg)
         else:
-            msg.linear.x = vel_x
             msg.angular.z = 0.0
+            msg.linear.x = vel_x
             self.publisher.publish(msg)
-        print(f"esquerda {left_obstacle}, Centro {center_obstacle} ,Direita {right_obstacle}")
-
+            
+        # print(f"esquerda {left_obstacle}, Centro {center_obstacle} ,Direita {right_obstacle}")
 def main(args=None):
     rclpy.init(args=None)
     node = Publisher()
