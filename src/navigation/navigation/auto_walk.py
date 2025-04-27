@@ -19,38 +19,48 @@ class Publisher(Node):
     def scan_callback(self, msg: LaserScan):
         scan_arr = msg.ranges
         # Array do Scan a Direita
-        dist_direita = scan_arr[0:90]
-        dist_esquerda = scan_arr[100:240]
+        dist_direita = scan_arr[30:90]
+        dist_centro = scan_arr[90:180]
+        dist_esquerda = scan_arr[180:200]
 
 
-        #Verifica se algum valor do array a esquerda é menor ou igual a 2
-        right_obstacle = any(dist <= 1.5 for dist in dist_esquerda)
-        #Verifica se algum valor do array a direita é menor ou igual a 2
-        left_obstacle = any(dist <= 1.5 for dist in dist_direita)
 
-        self.publish_walk(right_obstacle, left_obstacle)
+        #Verifica se algum valor do array a esquerda é menor ou igual a 1.5
+        right_obstacle = any(dist <= 1 for dist in dist_esquerda)
+        #Verifica se algum valor do array a direita é menor ou igual a 1.5
+        left_obstacle = any(dist <= 1 for dist in dist_direita)
+        #Verifica se algum valor do array ao centro é menor ou igual a 1.5
+        center_obstacle = any(dist <= 0.9 for dist in dist_centro)
+
+        #Chama a função Publish_walk
+        self.publish_walk(right_obstacle, left_obstacle, center_obstacle)
         
     #Função de andar
-    def publish_walk(self, right_obstacle, left_obstacle):
+    def publish_walk(self, right_obstacle, left_obstacle, center_obstacle):
         msg = Twist()
-        vel_x = 0.4
-        if (left_obstacle and right_obstacle == False):
+        vel_x = 0.5
+        if left_obstacle and not right_obstacle:
             msg.linear.x = vel_x
-            msg.angular.z = 0.0
+            msg.angular.z = 0.30
             self.publisher.publish(msg)
-        elif(left_obstacle == True):
-            msg.linear.x = vel_x
-            msg.angular.z = 0.5
+        elif center_obstacle:
+            msg.linear.x = -2.0
+            msg.angular.z = -1.0
             self.publisher.publish(msg)
-        elif(right_obstacle == True):
+
+        elif left_obstacle:
             msg.linear.x = vel_x
-            msg.angular.z = -0.5
+            msg.angular.z = 0.30
+            self.publisher.publish(msg)
+        elif right_obstacle and not left_obstacle:
+            msg.linear.x = vel_x
+            msg.angular.z = -0.30
             self.publisher.publish(msg)
         else:
             msg.linear.x = vel_x
             msg.angular.z = 0.0
             self.publisher.publish(msg)
-        print(left_obstacle, right_obstacle)
+        print(f"esquerda {left_obstacle}, Centro {center_obstacle} ,Direita {right_obstacle}")
 
 def main(args=None):
     rclpy.init(args=None)
