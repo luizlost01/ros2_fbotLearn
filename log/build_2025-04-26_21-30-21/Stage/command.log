@@ -1,4 +1,0 @@
-Invoking command in '/home/luiz/ros2_fbot/build/Stage': /usr/bin/cmake --build /home/luiz/ros2_fbot/build/Stage -- -j4 -l4
-Invoked command in '/home/luiz/ros2_fbot/build/Stage' returned '0': /usr/bin/cmake --build /home/luiz/ros2_fbot/build/Stage -- -j4 -l4
-Invoking command in '/home/luiz/ros2_fbot/build/Stage': /usr/bin/cmake --install /home/luiz/ros2_fbot/build/Stage
-Invoked command in '/home/luiz/ros2_fbot/build/Stage' returned '0': /usr/bin/cmake --install /home/luiz/ros2_fbot/build/Stage

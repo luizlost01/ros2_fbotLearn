@@ -1,6 +1,0 @@
-Invoking command in '/home/luiz/ros2_fbot/build/Stage': /usr/bin/cmake /home/luiz/ros2_fbot/src/Stage -DOpenGL_GL_PREFERENCE=LEGACY -DCMAKE_INSTALL_PREFIX=/home/luiz/ros2_fbot/install/Stage
-Invoked command in '/home/luiz/ros2_fbot/build/Stage' returned '0': /usr/bin/cmake /home/luiz/ros2_fbot/src/Stage -DOpenGL_GL_PREFERENCE=LEGACY -DCMAKE_INSTALL_PREFIX=/home/luiz/ros2_fbot/install/Stage
-Invoking command in '/home/luiz/ros2_fbot/build/Stage': /usr/bin/cmake --build /home/luiz/ros2_fbot/build/Stage -- -j4 -l4
-Invoked command in '/home/luiz/ros2_fbot/build/Stage' returned '0': /usr/bin/cmake --build /home/luiz/ros2_fbot/build/Stage -- -j4 -l4
-Invoking command in '/home/luiz/ros2_fbot/build/Stage': /usr/bin/cmake --install /home/luiz/ros2_fbot/build/Stage
-Invoked command in '/home/luiz/ros2_fbot/build/Stage' returned '0': /usr/bin/cmake --install /home/luiz/ros2_fbot/build/Stage
