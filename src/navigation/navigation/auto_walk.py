@@ -54,8 +54,6 @@ class Publisher(Node):
 
         goal = math.dist(goalPos, self.robotPos)
 
-        print(goal)
-
         vel_x = 0.5
         ang_z = 0.25
         
@@ -73,31 +71,6 @@ class Publisher(Node):
         elif left_obstacle:
             msg.angular.z = 0.2
             self.publisher.publish(msg)
-
-        # if center_obstacle:
-        #     msg.angular.z = 0.45
-        #     msg.linear.x = -1.0
-        #     self.publisher.publish(msg)
-        
-        # elif left_obstacle and not right_obstacle:
-        #     msg.angular.z = ang_z
-        #     msg.linear.x = vel_x
-        #     self.publisher.publish(msg)
-
-        # elif right_obstacle and not left_obstacle:
-        #     msg.angular.z = ang_z
-        #     msg.linear.x = vel_x
-        #     self.publisher.publish(msg)
-        
-        # elif right_obstacle and left_obstacle:
-        #     msg.angular.z = 0.90
-        #     msg.linear.x = 0.0
-        #     self.publisher.publish(msg)
-        # else:
-        #     msg.angular.z = 0.0
-        #     msg.linear.x = vel_x
-        #     self.publisher.publish(msg)
-        # print(f"esquerda {left_obstacle}, Centro {center_obstacle} ,Direita {right_obstacle}")
 def main(args=None):
     rclpy.init(args=None)
     node = Publisher()
